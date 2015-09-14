@@ -17,7 +17,7 @@ index page.
    site. There's very little consistency here.
 
 ## If you just want to use it
-1. Click CMD-O (Or CTRL-O for windows, I've heard) in firefox to add a
+1. Type CMD-O (Or CTRL-O for windows, I've heard) in firefox to add a
 plugin from your local directory.
 2. Select the @easylogin-0.0.1.xpi (or whatever the version is) and
    follow prompts to install it.
