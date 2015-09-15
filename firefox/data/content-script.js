@@ -20,7 +20,7 @@ function waitABit(){
     if(link.text.match(signup_re)){
       if(keysBound.indexOf('r')===-1){
         keysBound.push('r');
-        link.setAttribute("accesskey","r")
+        link.setAttribute("accesskey","r");
         return true;
       };
     };
@@ -28,12 +28,12 @@ function waitABit(){
     if(href===window.location.origin || href===window.location.host || href===window.location.hostname || href==='/' ){
       if(keysBound.indexOf('h')===-1){
         keysBound.push('h');
-        link.setAttribute("accesskey","h")
+        link.setAttribute("accesskey","h");
         return true;
       };
     };
   });
-  console.log("keysBound are: ", keysBound)
+  console.log("keysBound are: ", keysBound);
 };
 
 window.setTimeout(waitABit, 300);

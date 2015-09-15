@@ -1,0 +1,16 @@
+{
+  "name": "Easy Login",
+  "description": "Stop looking for the login button",
+  "version": "0.1",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+   {
+      "matches": ["<all_urls>"],
+      "js": ["make_accesskeys.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "manifest_version": 2
+}
