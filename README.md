@@ -19,8 +19,8 @@ Check here to be sure: https://en.wikipedia.org/wiki/Access_key
 
 ## Easy way
 
-https://addons.mozilla.org/en-US/firefox/addon/easylogin/
-https://chrome.google.com/webstore/detail/easy-login/kbiloeeamjednbfhgffjaoddlppbpppf
+* [Firefox](https://addons.mozilla.org/en-US/firefox/addon/easylogin/)
+* [Chrome](https://chrome.google.com/webstore/detail/easy-login/kbiloeeamjednbfhgffjaoddlppbpppf)
 
 ## Harder way (but you can verify the code)
 First, clone this repo locally.
