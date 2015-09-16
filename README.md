@@ -1,9 +1,9 @@
 #easylogin
 Stop hunting for the login link
 
-## Works on Firefox and Chrome
+# Works on Firefox and Chrome
 
-## What it does
+# What it does
 This lets you use a hotkey to log into sites, rather than looking for login
 links all the time. It also binds a hotkey to register, and to go to the
 index page.
@@ -15,8 +15,14 @@ new macs, "CTRL+OPT+l/h/r," likely "ALT+SHIFT+l/h/r" on everything else.
 Check here to be sure: https://en.wikipedia.org/wiki/Access_key
 
 
-## Using It
+# Using It
 
+## Easy way
+
+https://addons.mozilla.org/en-US/firefox/addon/easylogin/
+https://chrome.google.com/webstore/detail/easy-login/kbiloeeamjednbfhgffjaoddlppbpppf
+
+## Harder way (but you can verify the code)
 First, clone this repo locally.
 
 ### Firefox
@@ -35,9 +41,9 @@ plugin from your local directory.
    in chrome (yes, right into the browser)
 5. You might have to click enable somewhere on that page.
 
-## Hacking and Helping
+# Hacking and Helping
 
-### Firefox
+## Firefox
 1. You'll need the firefox build utility called "jpm."  You can install
    it like this:
     npm install jpm -g
@@ -52,12 +58,12 @@ If that didn't work, add a sudo at the beginning maybe
 4. Build a new one with "jpm xpi" to see what you did, but don't commit
    that file. The patch won't be accepted with a modified binary.
 
-### Chrome
+## Chrome
 The whole process is pretty much identical to building it for yourself
 in the previous section. Just fork and submit a PR if you want. You'll
 probably just want to mess with the make_accesskeys.js file
 
-### In general
+## In general
 I'm interested in on which sites the functionality is broken. If you
 want to help with minimal commitment, just send a PR with additions to
 broken_sites.md.
@@ -65,26 +71,25 @@ broken_sites.md.
 Don't commit any binary files or certs (chrome.crx, chrome.pem, or
 @easylogin.xpi)
 
-## What it doesn't do (Roadmap?)
+# What it doesn't do (Roadmap?)
 1. Work on every site. Some sites don't work. Amazon doesn't work on the
    front page. There could be specific rules for pages that don't fit
    the mold, but right now, that is not the case.
 2. Work even when certain things (input fields) have focus, so any site
    that uses autofocus will break this by default (until you click
    somewhere to blur first).
-3. Have an accesskey (f?) to focus on any arbitrary search field in a
+3. Have an accesskey ("f") to focus on any arbitrary search field in a
    site. There's very little consistency here.
 4. Try to match links based on Aria attributes.
 5. Try to match links with any intelligence generally. It just takes the first
    link with "login/log in/Login/LogIn/etc" that it sees. It might
    nonsensically just link to something in the content (eg. a reddit
-   link about watching mature content on youtube without logging in)
-6. Ignore links that point to different domains, eg. links on a content
-   site like reddit that might link to stories
-7. Right now, there aren't any binaries on the chrome store or firefox
-   freegan garage sale or whatever they call it.
-8. Also, it would be nice if both versions pulled from a common script
+   link about watching mature content on youtube without "log in")
+6. Ignore links that point to different domains
+7. It would be nice if both versions pulled from a common script
    file.
+8. Have a popup (maybe bound to ?) that would show what accesskeys were
+   able to be bound to what links.
 
 ## MIT Licence
 
